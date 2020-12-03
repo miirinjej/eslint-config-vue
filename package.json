@@ -1,0 +1,32 @@
+{
+  "name": "@miirinjej/eslint-config-vue",
+  "version": "1.0.0",
+  "description": "Standalone sharable eslint config for Vue/Nuxt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miirinjej/eslint-config-vue.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "vue",
+    "nuxt"
+  ],
+  "author": "Radmir Nabiullin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miirinjej/eslint-config-vue/issues"
+  },
+  "homepage": "https://github.com/miirinjej/eslint-config-vue#readme",
+  "dependencies": {
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.14.0"
+  }
+}
