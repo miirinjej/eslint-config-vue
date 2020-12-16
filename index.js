@@ -264,15 +264,7 @@ module.exports = {
       rules: {
         indent: 'off', // delegate to eslint-plugin-vue
         'max-len': 'off', // delegate to eslint-plugin-vue
-        'unicorn/filename-case': [
-          'error',
-          {
-            cases: {
-              pascalCase: true, // for components (e.g., components/BaseButton.vue)
-              snakeCase: true, // for pages (e.g., pages/articles/_id.vue)
-            },
-          },
-        ],
+        'unicorn/filename-case': 'off',
       },
     },
   ],
