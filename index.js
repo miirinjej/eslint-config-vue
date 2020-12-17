@@ -38,7 +38,7 @@ module.exports = {
       'error',
       'PascalCase',
       {
-        registeredComponentsOnly: false,
+        registeredComponentsOnly: true,
         ignores: [],
       },
     ],
