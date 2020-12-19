@@ -101,7 +101,7 @@ module.exports = {
     'vue/no-unregistered-components': [
       'error',
       {
-        ignorePatterns: [],
+        ignorePatterns: ['client(\\-\\w+)+', 'router(\\-\\w+)+'],
       },
     ],
     'vue/no-unsupported-features': [
