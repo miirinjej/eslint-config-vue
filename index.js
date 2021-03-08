@@ -42,6 +42,21 @@ module.exports = {
         ignores: [],
       },
     ],
+    'vue/custom-event-name-casing': [
+      'error',
+      'kebab-case',
+      {
+        ignores: [],
+      },
+    ],
+    'vue/html-button-has-type': [
+      'error',
+      {
+        button: true,
+        submit: true,
+        reset: true,
+      },
+    ],
     'vue/html-comment-content-newline': [
       'error',
       {
@@ -63,6 +78,13 @@ module.exports = {
         shouldMatchCase: false,
       },
     ],
+    ' vue/new-line-between-multi-line-property': [
+      'error',
+      {
+        minLineOfMultilineProperty: 2,
+      },
+    ],
+    'vue/next-tick-style': ['error', 'promise'],
     'vue/no-bare-strings-in-template': [
       'error',
       {
@@ -87,7 +109,11 @@ module.exports = {
       'error',
       { disallowVue3BuiltInComponents: true },
     ],
+    'vue/no-restricted-block': 'off',
+    'vue/no-restricted-call-after-await': 'off',
     'vue/no-restricted-component-options': 'off',
+    'vue/no-restricted-custom-event': 'off',
+    'vue/no-restricted-props': 'off',
     'vue/no-restricted-static-attribute': 'off',
     'vue/no-restricted-v-bind': 'off',
     'vue/no-static-inline-styles': ['error', { allowBinding: false }],
@@ -115,6 +141,8 @@ module.exports = {
       'error',
       {
         groups: ['props', 'data', 'computed', 'methods', 'setup'],
+        deepData: true,
+        ignorePublicMembers: false,
       },
     ],
     'vue/no-useless-mustaches': [
@@ -150,11 +178,20 @@ module.exports = {
     ],
     'vue/static-class-names-order': 'off',
     'vue/v-for-delimiter-style': ['error', 'in'],
+    'vue/v-on-event-hyphenation': [
+      'error',
+      'always',
+      {
+        autofix: false,
+        ignore: [],
+      },
+    ],
     'vue/v-on-function-call': [
       'error',
       'always',
       { ignoreIncludesComment: false },
     ],
+    'vue/valid-next-tick': 'error',
 
     /**
      * Extension rules
@@ -193,6 +230,7 @@ module.exports = {
         ignorePattern: '(<svg|d=")',
       },
     ],
+    'vue/no-constant-condition': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/no-extra-parens': [
       'error',

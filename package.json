@@ -24,7 +24,7 @@
   "homepage": "https://github.com/miirinjej/eslint-config-vue#readme",
   "dependencies": {
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.1.0"
+    "eslint-plugin-vue": "^7.7.0"
   },
   "peerDependencies": {
     "eslint": "^7.21.0"
