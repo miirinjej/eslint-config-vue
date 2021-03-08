@@ -78,7 +78,7 @@ module.exports = {
         shouldMatchCase: false,
       },
     ],
-    ' vue/new-line-between-multi-line-property': [
+    'vue/new-line-between-multi-line-property': [
       'error',
       {
         minLineOfMultilineProperty: 2,
